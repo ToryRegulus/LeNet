@@ -33,6 +33,7 @@ def import_data():
 
 
 if __name__ == '__main__':
+    # 下载数据集并调用TensorBoard查看数据集
     train, test = import_data()
     writer = SummaryWriter("logs")  # 创建一个SummaryWriter对象用于tensorboard显示数据
     step = 0  # 指定tensorboard的step

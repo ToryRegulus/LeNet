@@ -50,6 +50,7 @@ class LeNet(nn.Module):
 
 
 if __name__ == '__main__':
+    # 测试模型
     model = LeNet()
     img = torch.randn(256, 1, 32, 32)  # 按照输入图片的格式假定一个张量
     ret = model(img)
